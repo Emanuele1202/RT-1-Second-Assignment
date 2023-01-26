@@ -18,7 +18,7 @@ The package includes the following nodes:
 2. Service_nodeB.py - The service node that prints the number of goals reached and cancelled when called.
 3. Subscriber_nodeC.py - The node that subscribes to the robot's position and velocity from the topic '/pos_and_vel' and prints the distance of the robot from the target and the robot's average speed with a frequency set by a parameter in the launch file.
 
-## ROS Graph
+## ROS Start
 After starting the program through the command:
 
     - roslaunch assignment2 assignment2.launch
@@ -31,7 +31,7 @@ four windows will be available:
 
 To view the number of goals reached and cancelled, you can type the following command in a separate terminal:
     
-        - rosservice call /n_goal
+        - rosservice call /goals_n
 
 The frequency of publishing information by the third node can be set in the launch file assignment1.launch within the launch folder.
 
